@@ -28,7 +28,7 @@ a {
 
 .btn:hover {
     cursor: pointer;
-    background: #000;
+    background: #ffffff;
 }
 
 .headline {
@@ -47,6 +47,7 @@ a {
     color: #eee;
     height: 80px;
     position: fixed;
+    z-index: 999;
 }
 
 #navbar-container {

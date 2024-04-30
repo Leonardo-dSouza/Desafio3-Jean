@@ -25,61 +25,63 @@
 
     <header id="showcase">
         <div id="showcase-container">
-            <h2>Lorem ipsum dolor sit amet.</h2>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore, sed!</p>
-            <a href="" class="btn">Saiba mais</a>
+            <h2 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Berserk - Kentaro Miura
+            </h2>
+            <p>"O ódio é o lugar para onde vai o homem que não suporta sua própia tristeza"</p>
+            <button type="button" class="btn btn-outline-light">História</button>
         </div>
     </header>
-
-    <!-- Carrousel
-    <section>
-        <div>
-            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="{{url_for('static' , filename='images/Guts.png')}}" class="d-block w-100"
-                            alt="Guts_image">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="{{url_for('static' , filename='images/Griffith.png')}}" class="d-block w-100"
-                            alt="Griffith_image">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="{{url_for('static' , filename='images/Caska.png')}}" class="d-block w-100"
-                            alt="Caska_image">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-        </div>
-    </section> -->
 
     <section id="features">
         <div class="headline">Sobre os Personagens</div>
         <div id="features-container">
-            <div class="feature">
+            <div class="feature text-center">
                 <span class="feature-title">Lorem ipsum dolor sit amet.</span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi laboriosam illo, doloremque
                     placeat et.</p>
+                <div class="card">
+                    <img src="{{url_for('static' , filename='images/Guts.png')}}" class="d-block w-100"
+                    alt="Guts_image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
             </div>
-            <div class="feature">
+            <div class="feature text-center">
                 <span class="feature-title">Lorem ipsum dolor sit amet.</span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi laboriosam illo, doloremque
                     placeat et.</p>
+                <div class="card">
+                    <img src="{{url_for('static' , filename='images/Griffith.png')}}" class="d-block w-100"
+                    alt="Griffith_image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
             </div>
-            <div class="feature">
+            <div class="feature text-center">
                 <span class="feature-title">Lorem ipsum dolor sit amet.</span>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi laboriosam illo, doloremque
                     placeat et.</p>
+                <div class="card">
+                    <img src="{{url_for('static' , filename='images/Caska.png')}}" class="d-block w-100"
+                    alt="Caska_image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -151,7 +153,6 @@
 
 
     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
-
 </body>
 
 </html>
