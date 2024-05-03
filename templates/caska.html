@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+
+{% block Base %}
+
+<header id="showcaseCaska">
+    <div id="showcase-container">
+        <h2 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Caska - Uma guerreira
+            jogada aos lobos
+        </h2>
+        <p>"A Saga de Casca: Uma Vida de Lutas e Sacrifícios"</p>
+    </div>
+</header>
+
+
+<section id="LocaleÉpoca">
+    <div class="headline">História - TimeLine</div>
+    <style>
+        .imagem-escondida{
+            width: 30%;
+            height: 30%;
+        }
+        @media (max-width: 1030px) {
+            .imagem-escondida {
+                display: none;
+            }
+        }
+    </style>
+    <img class="imagem-escondida" src="{{url_for('static' , filename='images/Caska3.png')}}" alt="">
+    <img class="imagem-escondida" src="{{url_for('static' , filename='images/caskahistory.png')}}" alt="">
+    <div id="LocaleÉpoca-container">
+        <div id="items">
+            <h1>Infância e Juventude.</h1>
+            <div class="item">
+                <p>Casca nasceu em uma pequena aldeia, cercada por florestas densas e montanhas imponentes. Órfã desde
+                    cedo, ela cresceu como uma criança selvagem, aprendendo a caçar e lutar para sobreviver. Sua pele
+                    escura e cabelos curtos a tornavam diferente das outras crianças, mas também a faziam destemida.
+
+                    Aos 12 anos, Casca conheceu Griffith, um jovem carismático e ambicioso que liderava um bando de
+                    mercenários conhecido como “A Tropa do Falcão”. Fascinada por sua determinação e habilidade no campo
+                    de batalha, Casca se juntou à tropa, tornando-se uma guerreira formidável.</p>
+            </div>
+            <h1>A Ascensão dos Falcões</h1>
+            <div class="item">
+                <p>Sob o comando de Griffith, os Falcões conquistaram territórios, ganharam aliados e se tornaram uma
+                    força a ser reconhecida. Casca provou seu valor em inúmeras batalhas, ganhando respeito e lealdade
+                    de seus companheiros. Ela também desenvolveu sentimentos conflitantes por Griffith, admirando-o como
+                    líder, mas também desejando algo mais.
+                </p>
+            </div>
+            <h1>O Eclipse</h1>
+            <div class="item">
+                <p>No entanto, o destino dos Falcões mudou drasticamente. Durante uma missão, Griffith foi capturado e
+                    torturado, perdendo sua humanidade e sua capacidade de lutar. Casca assumiu o comando, mas a traição
+                    de um antigo membro da tropa desencadeou uma série de eventos terríveis.
+
+                    No fatídico Eclipse, os Falcões foram emboscados por demônios e sacrifícios humanos. Casca foi
+                    estuprada e marcada com a Marca do Sacrifício, condenada a uma vida de pesadelos e perseguição. Ela
+                    viu Griffith se tornar o quinto membro do God Hand, os poderosos demônios que governam o mundo.</p>
+            </div>
+            <h1>A Busca por Cura</h1>
+            <div class="item">
+                <p>Casca sobreviveu, mas sua mente ficou fragmentada. Ela não conseguia mais falar ou se lembrar de sua
+                    vida antes do Eclipse. Guts, outro membro dos Falcões, jurou protegê-la e encontrar uma cura para
+                    sua condição. Juntos, eles enfrentaram demônios, inquisidores e outros perigos.
+                </p>
+            </div>
+
+            <h1>A Jornada Solitária</h1>
+            <div class="item">
+                <p>Após a queda dos Falcões, Casca e Guts seguiram caminhos separados. Ela foi levada para a Ilha dos Elfos, onde sua mente foi restaurada, mas seu coração permaneceu em conflito. Ela ainda carregava a dor do passado e a lembrança de Griffith.</p>
+            </div>
+            <h1>O Reencontro</h1>
+            <div class="item">
+                <p>Casca e Guts eventualmente se reencontraram, mas o mundo estava mais sombrio do que nunca. A busca por vingança contra Griffith e a luta contra os demônios continuaram. Casca, agora uma líder forte e resiliente, enfrentou seus próprios demônios internos enquanto lutava ao lado de Guts.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+
+
+
+
+{% block GaleryImage %}
+<img class="gallery-image" src="{{url_for('static' , filename='images/Caska.png')}}" alt="Caska_image">
+<img class="gallery-image" src="{{url_for('static' , filename='images/Caska.png')}}" alt="Caska_image">
+{% endblock %}

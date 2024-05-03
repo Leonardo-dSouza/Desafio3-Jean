@@ -64,6 +64,7 @@ a {
 }
 
 #navbar-items {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: flex;
     list-style: none;
     text-transform: uppercase;
@@ -98,6 +99,46 @@ a {
 #showcase-container p {
     font-size: 1.2rem;
     padding: 7px 0;
+}
+
+
+#showcaseCaska{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    background: url("./images/CaskaFundo.png") no-repeat center center/cover;
+
+    /* Overlay */
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: color;
+}
+
+#showcaseGuts{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    background: url("./images/Guts1.png") no-repeat center center/cover;
+
+    /* Overlay */
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: color;
+}
+
+#showcaseGriffth{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #eee;
+    background: url("./images/griffthFundo.png") no-repeat center center/cover;
+
+    /* Overlay */
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: color;
 }
 
 
@@ -202,9 +243,9 @@ a {
 }
 
 .gallery-image {
-    display: inline-block;
-    width: 540px;
-    height: 360px;
+    display: flex;
+    width: 100%;
+    height: 100%;
     border-radius: 5px;
 }
 

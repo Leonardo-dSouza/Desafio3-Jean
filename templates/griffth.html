@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% block Base %}
+
+<header id="showcaseGriffth">
+    <div id="showcase-container">
+        <h2 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Griffth - Ascensão, Queda e Redenção
+        </h2>
+        <p>“Sonhos… Todo homem tem sonhos… Todo homem deseja perseguir seu sonho. Isso tortura ele, mas o sonho dá sentido à vida dele.”</p>
+    </div>
+</header>
+
+
+<section id="LocaleÉpoca">
+    <div class="headline">História - TimeLine</div>
+    <style>
+        .imagem-escondida{
+            width: 30%;
+            height: 30%;
+        }
+        @media (max-width: 1030px) {
+            .imagem-escondida {
+                display: none;
+            }
+        }
+    </style>
+    <img class="imagem-escondida" src="{{url_for('static' , filename='images/Griffth1.png')}}" alt="">
+    <img class="imagem-escondida" src="{{url_for('static' , filename='images/Griffth2.png')}}" alt="">
+    <img class="imagem-escondida" src="{{url_for('static' , filename='images/Griffth1.png')}}" alt="">
+    <div id="LocaleÉpoca-container">
+        <div id="items">
+            <h1>Infância e Juventude.</h1>
+            <div class="item">
+                <p>Griffith nasceu em uma família plebeia, mas desde cedo, ele demonstrou habilidades excepcionais de liderança e carisma. Seu olhar sempre esteve voltado para o alto, e ele sonhava em alcançar algo grandioso. Com determinação implacável, ele formou o Bando do Falcão, um grupo de mercenários que rapidamente ganhou fama e respeito.
+
+                </p>
+
+            </div>
+            <h1>O Sonho de Um Reino Próprio</h1>
+            <div class="item">
+                <p>Griffith não se contentava com menos do que a conquista de seu próprio reino. Ele acreditava que o poder e a glória eram seu destino. Com sua beleza e habilidades estratégicas, ele atraiu seguidores leais, incluindo o destemido espadachim Guts e a guerreira Casca.
+
+                </p>
+            </div>
+            <h1>A Ascensão dos Falcões</h1>
+            <div class="item">
+                <p>Sob o comando de Griffith, os Falcões conquistaram territórios, ganharam aliados e se tornaram uma força imparável. Ele era adorado por seus soldados e temido por seus inimigos. No entanto, sua ambição não conhecia limites, e ele estava disposto a sacrificar tudo para alcançar seu objetivo.
+
+                </p>
+            </div>
+            <h1>O Eclipse</h1>
+            <div class="item">
+                <p>O destino de Griffith mudou drasticamente durante o terrível Eclipse. Traído por um de seus próprios, ele foi capturado e torturado. Para obter poder, ele fez um pacto com os demônios, tornando-se o quinto membro da Mão de Deus. Nesse processo, ele se transformou em Femto, uma entidade demoníaca.
+
+
+                </p>
+            </div>
+
+            <h1>A Queda e a Traição</h1>
+            <div class="item">
+                <p>Griffith sacrificou seus companheiros, incluindo Guts e Casca, para obter poder. Ele se tornou um vilão odiado, e sua busca pelo reino próprio se transformou em uma busca por vingança. A traição e a culpa o atormentaram, mas ele estava determinado a alcançar seu objetivo, custasse o que custasse.
+
+                </p>
+            </div>
+            <h1>A Redenção?</h1>
+            <div class="item">
+                <p>Após anos de sofrimento e luta, Griffith ressurgiu como o governante de Falconia, uma cidade segura em meio ao caos demoníaco. Ele lidera o Novo Bando do Falcão, mas sua humanidade está perdida. A redenção parece impossível, mas talvez haja uma chance de ele encontrar a luz novamente.
+
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+
+
+
+
+    {% block GaleryImage %}
+        <img src="{{url_for('static' , filename='images/Caska.png')}}" alt="Caska_image">
+        <img src="{{url_for('static' , filename='images/Caska.png')}}" alt="Caska_image">
+    {% endblock %}
+    

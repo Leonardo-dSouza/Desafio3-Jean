@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" text="text/css" href="{{url_for('static', filename='style.css')}}">
     <link rel="stylesheet" href="{{url_for('static' , filename='normalize.css/normalize.css')}}">
     <link rel="stylesheet" href="{{url_for('static', filename='css/bootstrap.min.css')}}">
-    <link rel="stylesheet" text="text/css" href="{{url_for('static', filename='style.css')}}">
     <link rel="stylesheet" media="screen and (max-width: 768px)" href="{{url_for('static', filename='mobile.css')}}">
 
     <title>Berserk</title>
@@ -17,139 +17,38 @@
         <div id="navbar-container">
             <h1 class="logo">Berserk Fan-Wiki</h1>
             <ul id="navbar-items">
-                <li><a href="#showcase">Início</a></li>
-                <li><a href="#gallery">Galeria</a></li>
+                <li><a class="btn btn-outline-light" href="/index">|Home</a></li>
+                <li><a class="btn btn-outline-light" href="#gallery">|Galeria</a></li>
             </ul>
         </div>
     </nav>
 
-    <header id="showcase">
-        <div id="showcase-container">
-            <h2 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Berserk - Kentaro Miura
-            </h2>
-            <p>"O ódio é o lugar para onde vai o homem que não suporta sua própia tristeza"</p>
-            <button type="button" class="btn btn-outline-light">História</button>
-        </div>
-    </header>
 
-    <section id="features">
-        <div class="headline">Sobre os Personagens</div>
-        <div id="features-container">
-            <div class="feature text-center">
-                <span class="feature-title">Lorem ipsum dolor sit amet.</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi laboriosam illo, doloremque
-                    placeat et.</p>
-                <div class="card">
-                    <img src="{{url_for('static' , filename='images/Guts.png')}}" class="d-block w-100"
-                    alt="Guts_image">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="feature text-center">
-                <span class="feature-title">Lorem ipsum dolor sit amet.</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi laboriosam illo, doloremque
-                    placeat et.</p>
-                <div class="card">
-                    <img src="{{url_for('static' , filename='images/Griffith.png')}}" class="d-block w-100"
-                    alt="Griffith_image">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-            <div class="feature text-center">
-                <span class="feature-title">Lorem ipsum dolor sit amet.</span>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi laboriosam illo, doloremque
-                    placeat et.</p>
-                <div class="card">
-                    <img src="{{url_for('static' , filename='images/Caska.png')}}" class="d-block w-100"
-                    alt="Caska_image">
-                    <div class="card-body">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the
-                            card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    {% block Base %}
+    {% endblock %}
 
-    <section id="LocaleÉpoca">
-        <div class="headline">Local e Época</div>
-        <div id="LocaleÉpoca-container">
-            <img src="#" alt="">
-            <div id="items">
-                <div class="item">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio expedita provident nam hic beatae
-                        voluptate!</p>
-                </div>
-                <div class="item">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio expedita provident nam hic beatae
-                        voluptate!</p>
-                </div>
-                <div class="item">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio expedita provident nam hic beatae
-                        voluptate!</p>
-                </div>
-                <div class="item">
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odio expedita provident nam hic beatae
-                        voluptate!</p>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <div id="testimonials">
-        <div class="headline">Por que ler berserk?</div>
-        <div id="testimonials-container">
-            <div class="testimonial">
-                <img src="#" alt="" class="testimonial-image">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, autem dolores dolorum cumque
-                    voluptas eius. Eum quisquam illum error sapiente?</p>
-            </div>
-            <div class="testimonial">
-                <img src="#" alt="" class="testimonial-image">
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, autem dolores dolorum cumque
-                    voluptas
-                    eius. Eum quisquam illum error sapiente?</p>
-            </div>
-        </div>
-    </div>
-    </div>
 
     <section id="gallery">
         <div class="headline">Galeria</div>
         <div id="gallery-container">
-            <img src="#" alt="" class="gallery-image">
-
-
-
+            {% block GaleryImage %}
+            <img class="gallery-image" src="{{url_for('static' , filename='galery/GaleryGuts1.png')}}" alt="guts_image">
+            <img class="gallery-image" src="{{url_for('static' , filename='galery/GaleryGuts2.png')}}" alt="guts_image">
+            <img class="gallery-image" src="{{url_for('static' , filename='galery/GaleryGuts3.png')}}" alt="guts_image">
+            <img class="gallery-image" src="{{url_for('static' , filename='galery/GaleryGuts4.png')}}" alt="guts_image">
+            {% endblock %}
         </div>
     </section>
+
+
+
+
 
     <footer id="footer">
         <p>Copyright 2024 - Todos os direitos reservados.</p>
         <p>Feito por Leoo_boas.</p>
     </footer>
-
-    <article>
-
-        {% block Base %}
-        {% endblock %}
-
-    </article>
 
 
     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>

@@ -1,7 +1,109 @@
 {% extends 'base.html' %}
 
 {% block Base %}
-    
+
+<header id="showcase">
+    <div id="showcase-container">
+        <h2 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Berserk - Kentaro Miura
+        </h2>
+        <p>"O ódio é o lugar para onde vai o homem que não suporta sua própia tristeza"</p>
+
+        <button type="button" class="btn btn-outline-light" id="liveAlertBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">História</button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 style="color: black;" class="modal-title fs-5" id="exampleModalLabel">Ooops...</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <h1 style="color: black;">Página em desenvolvimento</h1>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</header>
+
+
+<section id="features">
+    <div class="headline">Sobre os Personagens</div>
+    <div id="features-container">
+        <div class="feature text-center">
+            <span class="feature-title">Lorem ipsum dolor sit amet.</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi laboriosam illo, doloremque
+                placeat et.</p>
+            <div class="card">
+                <img src="{{url_for('static' , filename='images/Guts.png')}}" class="d-block w-100" alt="Guts_image">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's content.</p>
+                    <a href="/guts" class="btn btn-dark">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="feature text-center">
+            <span class="feature-title">Lorem ipsum dolor sit amet.</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi laboriosam illo, doloremque
+                placeat et.</p>
+            <div class="card">
+                <img src="{{url_for('static' , filename='images/Griffith.png')}}" class="d-block w-100"
+                    alt="Griffith_image">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's content.</p>
+                    <a href="/griffth" class="btn btn-dark">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="feature text-center">
+            <span class="feature-title">Lorem ipsum dolor sit amet.</span>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi laboriosam illo, doloremque
+                placeat et.</p>
+            <div class="card">
+                <img src="{{url_for('static' , filename='images/Caska.png')}}" class="d-block w-100" alt="Caska_image">
+                <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                        the
+                        card's content.</p>
+                    <a href="/caska" class="btn btn-dark">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div id="testimonials">
+    <div class="headline">Por que ler berserk?</div>
+    <div id="testimonials-container">
+        <div class="testimonial">
+            <img src="#" alt="" class="testimonial-image">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, autem dolores dolorum cumque
+                voluptas eius. Eum quisquam illum error sapiente?</p>
+        </div>
+        <div class="testimonial">
+            <img src="#" alt="" class="testimonial-image">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, autem dolores dolorum cumque
+                voluptas
+                eius. Eum quisquam illum error sapiente?</p>
+        </div>
+    </div>
+</div>
+</div>
+
 
 
 

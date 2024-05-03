@@ -1,0 +1,86 @@
+{% extends 'base.html' %}
+
+{% block Base %}
+
+<header id="showcaseGuts">
+    <div id="showcase-container">
+        <h2 style="font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">Guts - Lutando Contra Demônios e Seus Próprios Demônios.
+        </h2>
+        <p>“Quando você encontrar o seu Deus, diga a ele para me deixar em paz.”</p>
+    </div>
+</header>
+
+
+<section id="LocaleÉpoca">
+    <div class="headline">História - TimeLine</div>
+    <style>
+        .imagem-escondida{
+            width: 30%;
+            height: 30%;
+        }
+        @media (max-width: 1030px) {
+            .imagem-escondida {
+                display: none;
+            }
+        }
+    </style>
+    <img class="imagem-escondida" src="{{url_for('static' , filename='images/Guts4.png')}}" alt="">
+    <img class="imagem-escondida" src="{{url_for('static' , filename='images/Guts2.png')}}" alt="">
+    <img class="imagem-escondida" src="{{url_for('static' , filename='images/Guts3.png')}}" alt="">
+    <div id="LocaleÉpoca-container">
+        <div id="items">
+            <h1>Infância e Juventude.</h1>
+            <div class="item">
+                <p>Encontrado na Lama: Guts foi descoberto ainda bebê em uma poça de lama e sangue, ao lado do corpo enforcado de sua mãe. Siss, uma mulher do bando de mercenários liderado por Gambino, o adotou e cuidou dele. Esses primeiros anos foram marcados por lutas pela sobrevivência e treinamento árduo.
+                    Treinamento com Gambino: Guts cresceu no bando, treinando com Gambino no combate com espadas. Ele aprendeu a sobreviver em um mundo brutal e violento, mas também enfrentou abusos e dificuldades. Gambino, seu pai adotivo, não era um homem afetuoso, e Guts teve que aprender a se proteger e a lutar desde cedo.
+                </p>
+
+            </div>
+            <h1>Adolescência e Vida Adulta</h1>
+            <div class="item">
+                <p>Bando do Falcão: Guts se tornou um membro do Bando do Falcão, liderado por Griffith. Ele lutou ao lado de seus companheiros em batalhas épicas, ganhando respeito e amizade. O Bando do Falcão se tornou sua família, e Guts encontrou um senso de pertencimento e propósito ao lado deles.
+
+                </p>
+            </div>
+            <h1>Traição e Eclipse</h1>
+            <div class="item">
+                <p>No fatídico Eclipse, Griffith sacrificou seus companheiros para obter poder. Guts perdeu um olho e um braço, e Casca foi estuprada. Essa traição marcou profundamente Guts, que jurou vingança contra Griffith. A cena do Eclipse é uma das mais impactantes e brutais da série, deixando cicatrizes físicas e emocionais em todos os envolvidos.
+
+                </p>
+            </div>
+            <h1>Busca por Vingança</h1>
+            <div class="item">
+                <p>Guts partiu em uma jornada solitária, caçando demônios e procurando meios para enfrentar Griffith. Ele encontrou a lendária Armadura Berserker e a Espada do Dragão, tornando-se um guerreiro formidável. Sua busca por vingança o consumiu, mas também o impulsionou a sobreviver e a lutar contra as forças sobrenaturais que o cercavam.
+
+
+                </p>
+            </div>
+
+            <h1>Companheiros e Amizade</h1>
+            <div class="item">
+                <p> Ao longo de sua jornada, Guts encontrou aliados como Puck, Isidro, Farnese e Schierke. Cada um deles desempenhou um papel importante em sua vida, ajudando-o a enfrentar demônios e lidar com suas próprias feridas emocionais. Esses companheiros trouxeram luz e humanidade para sua jornada solitária.
+
+                </p>
+            </div>
+            <h1>Marca do Sacrifício</h1>
+            <div class="item">
+                <p>Guts carrega a Marca do Sacrifício, que o conecta ao mundo dos demônios. Ele é perseguido por criaturas malignas e busca uma maneira de se libertar dessa maldição. A Marca é um lembrete constante de sua tragédia pessoal e de sua ligação com o plano sobrenatural.
+
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
+
+
+
+
+
+    {% block GaleryImage %}
+        <img class="gallery-image" src="{{url_for('static' , filename='galery/GaleryGuts1.png')}}" alt="guts_image">
+        <img class="gallery-image" src="{{url_for('static' , filename='galery/GaleryGuts2.png')}}" alt="guts_image">
+        <img class="gallery-image" src="{{url_for('static' , filename='galery/GaleryGuts3.png')}}" alt="guts_image">
+        <img class="gallery-image" src="{{url_for('static' , filename='galery/GaleryGuts4.png')}}" alt="guts_image">
+    {% endblock %}
+    
