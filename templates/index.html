@@ -8,7 +8,8 @@
         </h2>
         <p>"O ódio é o lugar para onde vai o homem que não suporta sua própia tristeza"</p>
 
-        <button type="button" class="btn btn-outline-light" id="liveAlertBtn" data-bs-toggle="modal" data-bs-target="#exampleModal">História</button>
+        <button type="button" class="btn btn-outline-light" id="liveAlertBtn" data-bs-toggle="modal"
+            data-bs-target="#exampleModal">História</button>
 
         <!-- Modal -->
         <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -32,76 +33,129 @@
     </div>
 </header>
 
-
-<section id="features">
-    <div class="headline">Sobre os Personagens</div>
-    <div id="features-container">
-        <div class="feature text-center">
-            <span class="feature-title">Lorem ipsum dolor sit amet.</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi laboriosam illo, doloremque
-                placeat et.</p>
-            <div class="card">
-                <img src="{{url_for('static' , filename='images/Guts.png')}}" class="d-block w-100" alt="Guts_image">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the
-                        card's content.</p>
-                    <a href="/guts" class="btn btn-dark">Go somewhere</a>
+<div id="features2">
+    <section id="features">
+        <div class="headline">Sobre os Personagens</div>
+        <div id="features-container">
+            <div class="feature text-center">
+                <span class="feature-title">Lorem ipsum dolor sit amet.</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi laboriosam illo, doloremque
+                    placeat et.</p>
+                <div class="card">
+                    <img src="{{url_for('static' , filename='images/Guts.png')}}" class="d-block w-100"
+                        alt="Guts_image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="/guts" class="btn btn-dark">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="feature text-center">
+                <span class="feature-title">Lorem ipsum dolor sit amet.</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi laboriosam illo, doloremque
+                    placeat et.</p>
+                <div class="card">
+                    <img src="{{url_for('static' , filename='images/Griffith.png')}}" class="d-block w-100"
+                        alt="Griffith_image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="/griffth" class="btn btn-dark">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="feature text-center">
+                <span class="feature-title">Lorem ipsum dolor sit amet.</span>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi laboriosam illo, doloremque
+                    placeat et.</p>
+                <div class="card">
+                    <img src="{{url_for('static' , filename='images/Caska.png')}}" class="d-block w-100"
+                        alt="Caska_image">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="/caska" class="btn btn-dark">Go somewhere</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="feature text-center">
-            <span class="feature-title">Lorem ipsum dolor sit amet.</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi laboriosam illo, doloremque
-                placeat et.</p>
-            <div class="card">
-                <img src="{{url_for('static' , filename='images/Griffith.png')}}" class="d-block w-100"
-                    alt="Griffith_image">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the
-                        card's content.</p>
-                    <a href="/griffth" class="btn btn-dark">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="feature text-center">
-            <span class="feature-title">Lorem ipsum dolor sit amet.</span>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores animi laboriosam illo, doloremque
-                placeat et.</p>
-            <div class="card">
-                <img src="{{url_for('static' , filename='images/Caska.png')}}" class="d-block w-100" alt="Caska_image">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                        the
-                        card's content.</p>
-                    <a href="/caska" class="btn btn-dark">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
+</div>
 
 
 <div id="testimonials">
     <div class="headline">Por que ler berserk?</div>
     <div id="testimonials-container">
         <div class="testimonial">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Comentário 1
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Não lembro exatamente os números dos capítulos, mas conhecendo a
+                            história acredito que isso seja a ordem cronológica dos eventos. Eu li na ordem tradicional
+                            mesmo, mas acredito que dessa forma mesmo sendo um pouquinho mais complicado torna um plot
+                            twist muito mais forte</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            Comentário 2
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Pretendo ler Berserk em breve, e de acordo com um comentário que li,
+                            essa é a melhor maneira pra ter uma experiência satisfatória:
+
+                            "Ler do -8 ao 94, depois voltar pro -16 até o -9, e assim do 95 em diante"
+
+                            Pra quem pretende ler Berserk, pode salvar essa informação, de nada.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseThree" aria-expanded="false"
+                            aria-controls="flush-collapseThree">
+                            Comentário 3
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                        data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Placeholder content for this accordion, which is intended to
+                            demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion
+                            body. Nothing more exciting happening here in terms of content, but just filling up the
+                            space to make it look, at least at first glance, a bit more representative of how this would
+                            look in a real-world application.</div>
+                    </div>
+                </div>
+            </div>
             <img src="#" alt="" class="testimonial-image">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, autem dolores dolorum cumque
-                voluptas eius. Eum quisquam illum error sapiente?</p>
+            <p>
+                A ordem tradicional de leitura é seguir os volumes na sequência numérica. No entanto, um comentário
+                interessante sugere uma abordagem diferente: “Ler do volume -8 ao 94, depois voltar para o volume -16
+                até o -9, e a partir do volume 95 em diante.” Alguns leitores acreditam que essa ordem pode proporcionar
+                uma experiência mais satisfatória1.
+                Outros leitores discordam e afirmam que não é necessário seguir essa ordem específica. Eles leram
+                normalmente e não tiveram problemas para entender a história, mesmo após assistir ao antigo anime1.</p>
         </div>
-        <div class="testimonial">
-            <img src="#" alt="" class="testimonial-image">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni, autem dolores dolorum cumque
-                voluptas
-                eius. Eum quisquam illum error sapiente?</p>
-        </div>
+
     </div>
-</div>
 </div>
 
 

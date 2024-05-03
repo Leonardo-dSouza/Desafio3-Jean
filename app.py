@@ -9,7 +9,6 @@ def index():
 def SobreCaska():
     return render_template("caska.html")
 
-
 @app.route("/guts")
 def SobreGuts():
     return render_template("guts.html")
